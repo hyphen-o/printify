@@ -4,6 +4,13 @@ version = "0.1.0"
 description = ""
 authors = ["hyphen-o"]
 readme = "README.md"
+packages = [
+    {include = 'printify'},
+    {include = 'debug', from = 'printify'},
+    {include = 'info', from = 'printify'},
+    {include = 'logging', from = 'printify'},
+    {include = 'constants', from = 'printify'},
+]
 
 [tool.poetry.dependencies]
 python = "^3.10"
